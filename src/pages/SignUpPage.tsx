@@ -2,7 +2,7 @@ export default function SignUpPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="w-full max-w-xl bg white p-8 rounded-lg shadow-lg border border-gray-200">
-        <h1 className="text-2x1 font-bold mb-6 text-center">Sign Up</h1>
+        <h1 className="text-3x1 font-bold mb-6 text-center">Sign Up</h1>
         <div className="mb-6">
           <h3 className="font-bold mb-4">Personal Identity</h3>
           <div>
