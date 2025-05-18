@@ -1,3 +1,12 @@
+// import { Routes } from "react-router-dom";
+import SignUpPage from "./pages/SignUpPage";
+
 export default function App() {
-  return <h1 className="text-4xl text-amber-300">test</h1>;
+  return (
+    <div>
+      <nav></nav>
+      {/* <Routes path="" /> */}
+      <SignUpPage />
+    </div>
+  );
 }
