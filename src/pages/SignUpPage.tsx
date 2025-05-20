@@ -1,8 +1,8 @@
 export default function SignUpPage() {
   return (
     <div className="min-h-screen flex text-black items-center justify-center bg-gray-100">
-      <fieldset className="bg-white border border-base-300 rounded-box w-full max-w-2xl p-6 shadow-lg">
-        <legend className="text-lg font-semibold mb-3 text-black">
+      <fieldset className="bg-white border border-base-300 rounded-box w-full max-w-xl p-6 shadow-lg">
+        <legend className="text-2xl font-semibold mb-3 text-black">
           Sign Up
         </legend>
 
@@ -38,8 +38,7 @@ export default function SignUpPage() {
             <label className="block mb-1 font-medium">Date of Birth</label>
             <input
               type="date"
-              name="dob"
-              className="w-full border rounded px-3 py-2"
+              className="input bg-white border border-base-300 "
             />
           </div>
           <div>
@@ -70,6 +69,7 @@ export default function SignUpPage() {
               type="text"
               placeholder="Full Name"
               className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+              required
             />
           </div>
 
@@ -81,6 +81,7 @@ export default function SignUpPage() {
               type="email"
               placeholder="example@gmail.com"
               className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+              required
             />
           </div>
 
@@ -92,6 +93,7 @@ export default function SignUpPage() {
               type="password"
               placeholder="********"
               className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+              required
             />
           </div>
 
@@ -103,6 +105,7 @@ export default function SignUpPage() {
               type="password"
               placeholder="********"
               className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+              required
             />
           </div>
         </div>
