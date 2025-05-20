@@ -5,17 +5,11 @@ import {
   KeyboardMusic,
   Settings2,
 } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const location = useLocation();
-
-  if (location.pathname === "/signup" || location.pathname === "/login") {
-    return null;
-  }
-
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col">
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
