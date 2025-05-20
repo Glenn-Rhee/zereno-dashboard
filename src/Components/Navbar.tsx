@@ -1,4 +1,21 @@
+import {
+  LayoutDashboard,
+  Users,
+  ShoppingCart,
+  KeyboardMusic,
+  Settings2,
+} from "lucide-react";
+import { useLocation } from "react-router-dom";
+
 export default function Navbar() {
+  const location = useLocation();
+  console.log(location);
+
+  // if (location.pathname === "/signup" || location.pathname === "/login") {
+  //   return null;
+  // }
+
+  
   return (
     <div className="min-h-screen flex flex-col">
       <div className="drawer">
@@ -49,19 +66,48 @@ export default function Navbar() {
             className="drawer-overlay"
           ></label>
           <ul className="menu bg-base-200 min-h-full w-80 p-4">
+            {/* photo profile */}
+            <div className="flex flex-col items-center mt-15">
+              <div className="w-30 h-30 rounded-full overflow-hidden shadow-lg ">
+                <img
+                  src="/public/profile.jpg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
             {/* Sidebar content here */}
 
             <li>
-              <a></a>
+              <a className="flex items-center gap-6 mt-13 text-lg">
+                <LayoutDashboard size={30} />
+                Dasboard
+              </a>
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+              <a className="flex items-center gap-6 mt-6 text-lg">
+                <Users size={30} />
+                User
+              </a>
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+              <a className="flex items-center gap-6 mt-6 text-lg">
+                <ShoppingCart size={30} />
+                Orders
+              </a>
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+              <a className="flex items-center gap-6 mt-6 text-lg">
+                <KeyboardMusic size={30} />
+                Products
+              </a>
+            </li>
+            <li>
+              <a className="flex items-center gap-6 mt-6 text-lg">
+                <Settings2 size={30} />
+                Settings
+              </a>
             </li>
           </ul>
         </div>
