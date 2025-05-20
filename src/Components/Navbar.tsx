@@ -5,7 +5,7 @@ import {
   KeyboardMusic,
   Settings2,
 } from "lucide-react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
@@ -15,7 +15,6 @@ export default function Navbar() {
   //   return null;
   // }
 
-  
   return (
     <div className="min-h-screen flex flex-col">
       <div className="drawer">
@@ -79,36 +78,35 @@ export default function Navbar() {
 
             {/* Sidebar content here */}
 
-            <li>
-              <a className="flex items-center gap-6 mt-13 text-lg">
-                <LayoutDashboard size={30} />
-                Dasboard
-              </a>
-            </li>
-            <li>
-              <a className="flex items-center gap-6 mt-6 text-lg">
-                <Users size={30} />
-                User
-              </a>
-            </li>
-            <li>
-              <a className="flex items-center gap-6 mt-6 text-lg">
-                <ShoppingCart size={30} />
-                Orders
-              </a>
-            </li>
-            <li>
-              <a className="flex items-center gap-6 mt-6 text-lg">
-                <KeyboardMusic size={30} />
-                Products
-              </a>
-            </li>
-            <li>
-              <a className="flex items-center gap-6 mt-6 text-lg">
-                <Settings2 size={30} />
-                Settings
-              </a>
-            </li>
+            <Link className="flex items-center gap-6 mt-13 text-lg" to={"/"}>
+              <LayoutDashboard size={30} />
+              Dasboard
+            </Link>
+            <Link className="flex items-center gap-6 mt-6 text-lg" to={"/user"}>
+              <Users size={30} />
+              User
+            </Link>
+            <Link
+              className="flex items-center gap-6 mt-6 text-lg"
+              to={"/orders"}
+            >
+              <ShoppingCart size={30} />
+              Orders
+            </Link>
+            <Link
+              className="flex items-center gap-6 mt-6 text-lg"
+              to={"/products"}
+            >
+              <KeyboardMusic size={30} />
+              Products
+            </Link>
+            <Link
+              className="flex items-center gap-6 mt-6 text-lg"
+              to={"Settings"}
+            >
+              <Settings2 size={30} />
+              Settings
+            </Link>
           </ul>
         </div>
       </div>
