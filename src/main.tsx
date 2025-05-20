@@ -10,6 +10,8 @@ import DashboardPage from "./pages/DasboardPage.tsx";
 import NotFound from "./Components/NotFound.tsx";
 import ProductPage from "./pages/ProductPage.tsx";
 import SettingPage from "./pages/SettingPage.tsx";
+import UserPage from "./pages/UserPage.tsx";
+import OrdersPage from "./pages/OrdersPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -19,8 +21,10 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/signup" element={<SignUpPage />} />
 
         <Route path="/" element={<DashboardPage />} />
-        <Route path="/product" element={<ProductPage />} />
-        <Route path="/setting" element={<SettingPage />} />
+        <Route path="/user" element={<UserPage />} />
+        <Route path="/products" element={<ProductPage />} />
+        <Route path="/orders" element={<OrdersPage />} />
+        <Route path="/settings" element={<SettingPage />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
