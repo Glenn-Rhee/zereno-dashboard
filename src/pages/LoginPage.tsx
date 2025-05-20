@@ -2,8 +2,8 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex text-black items-center justify-center bg-gray-100">
       <fieldset className="bg-white border border-base-300 rounded-box w-full max-w-2xl p-6 shadow-lg">
-        <legend className="text-lg font-semibold mb-3 text-black">
-          Sign Up
+        <legend className="text-2xl font-semibold mb-3 text-black ">
+          Login
         </legend>
 
         <div className="mb-4">
@@ -29,8 +29,11 @@ export default function LoginPage() {
         </div>
         <div className="mt-4">
           <button className="btn btn-neutral mt-6 w-full">Login</button>
-
           <p className="text-center mt-5 text-sm text-blue-600 hover:underline cursor-pointer">
+            Forgot Password?
+          </p>
+
+          <p className="text-center mt-4 text-sm text-blue-600 hover:underline cursor-pointer">
             Already have an Account?
           </p>
         </div>

@@ -8,7 +8,7 @@ export default function App() {
     <div>
       <nav></nav>
       {/* <Routes path="" /> */}
-      <SignUpPage />
+      <DasboardPage />
     </div>
   );
 }
