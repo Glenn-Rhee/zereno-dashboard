@@ -1,3 +1,4 @@
+
 export default function SignUpPage() {
   return (
     <div className="min-h-screen flex text-black items-center justify-center bg-gray-100">

@@ -9,11 +9,10 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
-  console.log(location);
 
-  // if (location.pathname === "/signup" || location.pathname === "/login") {
-  //   return null;
-  // }
+  if (location.pathname === "/signup" || location.pathname === "/login") {
+    return null;
+  }
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -102,7 +101,7 @@ export default function Navbar() {
             </Link>
             <Link
               className="flex items-center gap-6 mt-6 text-lg"
-              to={"Settings"}
+              to={"settings"}
             >
               <Settings2 size={30} />
               Settings
