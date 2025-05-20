@@ -15,7 +15,6 @@ export default function Navbar() {
   //   return null;
   // }
 
-  
   return (
     <div className="min-h-screen flex flex-col">
       <div className="drawer">
