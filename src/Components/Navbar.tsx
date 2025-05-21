@@ -18,10 +18,10 @@ export default function Navbar() {
       drawer.checked = false;
     }
   }, [location.pathname]);
-  
+
   return (
     <div className="flex flex-col">
-      <div className="drawer lg:drawer-open fixed">
+      <div className="drawer lg:drawer-open fixed z-20">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
