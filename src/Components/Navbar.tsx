@@ -5,9 +5,20 @@ import {
   KeyboardMusic,
   Settings2,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const drawer = document.getElementById("my-drawer-3") as HTMLInputElement;
+
+    if (drawer && drawer.checked) {
+      drawer.checked = false;
+    }
+  }, [location.pathname]);
+  
   return (
     <div className="flex flex-col">
       <div className="drawer lg:drawer-open fixed">
