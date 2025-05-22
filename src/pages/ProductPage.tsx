@@ -2,9 +2,9 @@ import Container from "../Components/Container";
 
 export default function ProductPage() {
   return (
-    <Container>
+    <Container className="px-2">
       <div className="overflow-x-auto">
-        <div className="relative z-30">
+        <div className="relative mt-8">
           <button className="btn bg-green-500">Insert</button>
           <label className="input">
             <svg
